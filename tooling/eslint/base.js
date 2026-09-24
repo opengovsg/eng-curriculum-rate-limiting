@@ -55,7 +55,10 @@ export default defineConfig(
       ...tseslint.configs.stylisticTypeChecked,
     ],
     rules: {
-      ...turboPlugin.configs.recommended.rules,
+      // eslint-plugin-turbo's types loosened configs.recommended to `ConfigObject | ConfigObject[]`
+      .../** @type {{ rules: Record<string, unknown> }} */ (
+        turboPlugin.configs?.recommended
+      ).rules,
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
