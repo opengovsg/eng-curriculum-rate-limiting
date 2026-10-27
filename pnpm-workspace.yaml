@@ -15,7 +15,7 @@ catalog:
   react-hook-form: ^7.68.0
   '@hookform/resolvers': '^5.2.2'
   typescript: ^5.9.3
-  zod: ^4.1.13
+  zod: ^4.6.7
 
 catalogs:
   oui:
@@ -27,9 +27,9 @@ catalogs:
     '@prisma/client-runtime-utils': 7.10.0
     prisma: ^7.10.0
   next:
-    '@next/env': 16.3.6
-    '@next/eslint-plugin-next': 16.3.6
-    next: 16.3.6
+    '@next/env': 16.4.3
+    '@next/eslint-plugin-next': 16.4.3
+    next: 16.4.3
   react:
     '@types/react': ^19.2.7
     '@types/react-dom': ^19.2.3
@@ -114,6 +114,7 @@ overrides:
   tmp: '>=0.2.6'
   uuid: '>=11.1.1'
   'yaml@2': '>=2.8.3'
+  'zod@4': '>=4.6.7'
 
 patchedDependencies:
   '@prisma/client': patches/@prisma__client.patch
