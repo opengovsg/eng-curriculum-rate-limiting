@@ -97,8 +97,8 @@ catalogs:
       specifier: ^10.6.0
       version: 10.6.0
     '@storybook/addon-vitest':
-      specifier: ^10.6.0
-      version: 10.6.0
+      specifier: ^10.6.2
+      version: 10.6.5
     '@storybook/nextjs-vite':
       specifier: ^10.6.0
       version: 10.6.0
@@ -338,7 +338,7 @@ importers:
         version: 10.6.0(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))
       '@storybook/addon-vitest':
         specifier: catalog:storybook10
-        version: 10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11)(@vitest/runner@4.1.11)(react@19.2.3)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))(vitest@4.1.11)
+        version: 10.6.5(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11)(react@19.2.3)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))(vitest@4.1.11)
       '@storybook/nextjs-vite':
         specifier: catalog:storybook10
         version: 10.6.0(@types/react-dom@19.2.3(@types/react@19.2.7))(@types/react@19.2.7)(next@16.4.3(@types/node@24.10.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(rollup@4.63.4)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))(typescript@5.9.3)(vite@7.3.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.0)(yaml@2.9.1))
@@ -3293,20 +3293,17 @@ packages:
       '@types/react':
         optional: true
 
-  '@storybook/addon-vitest@10.6.0':
-    resolution: {integrity: sha512-GY2SwSXLNgyMqjQ59J7YTkEQTHdEbBMggOvbbuhuPUBhWo97OGSDCmn1UW3nXDZvkoWyWhF9T9628m1uei7FbA==}
+  '@storybook/addon-vitest@10.6.5':
+    resolution: {integrity: sha512-0N0E7TQgmdrPNCPqNiVdTWOEQ1Nes+YsUphYX/abzlp6ReOyYBoQJw6mZ0b7BN5ACgdXQsr9Tth161t72k+51Q==}
     peerDependencies:
-      '@vitest/browser': ^3.0.0 || ^4.0.0
-      '@vitest/browser-playwright': ^4.0.0
-      '@vitest/runner': ^3.0.0 || ^4.0.0
-      storybook: ^10.6.0
-      vitest: ^3.0.0 || ^4.0.0
+      '@vitest/browser': ^4.0.0 || ^5.0.0
+      '@vitest/browser-playwright': ^4.0.0 || ^5.0.0
+      storybook: ^10.6.5
+      vitest: ^4.0.0 || ^5.0.0
     peerDependenciesMeta:
       '@vitest/browser':
         optional: true
       '@vitest/browser-playwright':
-        optional: true
-      '@vitest/runner':
         optional: true
       vitest:
         optional: true
@@ -6933,6 +6930,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -10095,7 +10093,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react-dom'
 
-  '@storybook/addon-vitest@10.6.0(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11)(@vitest/runner@4.1.11)(react@19.2.3)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))(vitest@4.1.11)':
+  '@storybook/addon-vitest@10.6.5(@vitest/browser-playwright@4.1.11)(@vitest/browser@4.1.11)(react@19.2.3)(storybook@10.6.0(@types/react@19.2.7)(prettier@3.6.2)(react@19.2.3))(vitest@4.1.11)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.1.0(react@19.2.3)
@@ -10103,7 +10101,6 @@ snapshots:
     optionalDependencies:
       '@vitest/browser': 4.1.11(msw@2.12.3(@types/node@24.10.1)(typescript@5.9.3))(vite@7.3.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.0)(yaml@2.9.1))(vitest@4.1.11)
       '@vitest/browser-playwright': 4.1.11(msw@2.12.3(@types/node@24.10.1)(typescript@5.9.3))(playwright@1.57.0)(vite@7.3.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.0)(yaml@2.9.1))(vitest@4.1.11)
-      '@vitest/runner': 4.1.11
       vitest: 4.1.11(@types/node@24.10.1)(@vitest/browser-playwright@4.1.11)(@vitest/coverage-v8@4.1.11)(msw@2.12.3(@types/node@24.10.1)(typescript@5.9.3))(vite@7.3.6(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.0)(yaml@2.9.1))
     transitivePeerDependencies:
       - react
